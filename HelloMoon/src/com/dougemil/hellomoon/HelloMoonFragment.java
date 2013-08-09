@@ -17,6 +17,8 @@ public class HelloMoonFragment extends Fragment {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		// preserves the fragment when activity is destroyed
+		// used to maintain state on rotation
 		setRetainInstance(true);
 	}
 
